@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+}
+.centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This ensures the image is centered vertically on the viewport */
+}
+.centered-image img {
+    margin-top: -25%;
+    width: 77%;
+}
+.jumbotron.jumbotron-fluid {
+   
+        color: #00BFF0;
+        background-color: black;
+    }
+    .lead {color: white;}
