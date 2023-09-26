@@ -1,6 +1,14 @@
 body {
     background-color: black;
 }
+.collapse.navbar-collapse.ml-auto {
+    justify-content: right;
+}
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    /* border-color: #17a2b8; */
+}
+
 .centered-image {
     display: flex;
     justify-content: center;
@@ -14,7 +22,7 @@ body {
 .jumbotron.jumbotron-fluid {
    
         color: #00BFF0;
-        background-color: black;
+        background-color: transparent;
     }
     .lead {color: white;}
     #back-arrow {
@@ -22,11 +30,75 @@ body {
         #00BFF0;
     }
     @media (min-width: 768px){
-        .centered-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        .display-4 {
+            /* background-color: white; */
+            font-size: 4.5rem;
+            font-weight: 420;
+            line-height: 1.2;
+            margin-top: -64%;
+            text-align: left;
+            padding: 2%;
         }
-    }
+        .container {
+            margin-top: -50px;
+        }
+        .centered-image img {
+            margin-top: -72%;
+            width: 77%;
+        }
+        .container-fluid img {
+            width: 100%;
+            border-radius: 25px;
+        }
+        .lead {
+            margin-left: 46%;
+            margin-right: 2%;
+            font-size: 1.5rem;
+            font-weight: 350;
+            /* margin-left: 159px; */
+            /* text-align: left; */
+            padding: 2%;
+            margin-top: 18%;
+            /* width: 59%; */
+        }
+            .jumbotron.jumbotron-fluid {
+                
+                    margin-top: -8%;
+                }
+            .menu-icon-img img {
+                    width: 50px;
+                }
+                .menu-icon-img img {
+                    transition: transform 0.2s; /* Add a smooth transition effect */
+                }
+            
+                .menu-icon-img:hover img {
+                    transform: scale(1.1); /* Increase the size on hover */
+                }
+            }
+            @media screen and (min-width: 1024px) {
+                .lead {
+                    margin-left: 46%;
+                    margin-right: 2%;
+                    font-size: 2.1rem;
+                    font-weight: 350;
+                    /* margin-left: 159px; */
+                    /* text-align: left; */
+                    padding: 2%;
+                    margin-top: 20%;
+                    /* width: 59%; */
+                }
+                .display-4 {
+                    /* background-color: white; */
+                    font-size: 4.5rem;
+                    font-weight: 420;
+                    line-height: 1.2;
+                    margin-top: -63%;
+                    text-align: left;
+                    padding: 2%;
+                    margin-left: 5%;
+                }
+       
+            }
+    
      
