@@ -29,17 +29,16 @@ body {
     margin-top: -25%;
     width: 77%;
 }
-.jumbotron.jumbotron-fluid {
-   
-        color: #00BFF0;
-        background-color: transparent;
-    }
+
     .lead {color: white;}
-    #back-arrow {
-        padding: 1rem; color: 
-        #00BFF0;
-    }
+   
     @media (min-width: 768px){
+        .navbar-nav {font-size: 1.4rem;}
+        .jumbotron.jumbotron-fluid {
+            color: #00BFF0;
+            background-color: transparent;
+            margin-top: -5%;
+        }
         .navbar-toggler {
             background-color: transparent;
             border: none;
@@ -50,6 +49,15 @@ body {
             background-color:#white
             ;
             box-shadow: -1px 0px 13px 4px white /* Adjust the values as needed */;
+        }
+        #back-arrow {
+            font-size: 1.4rem;
+            margin-left: 20px;
+            margin-top: 4%;
+            margin-bottom: 0%;
+            /* padding-bottom: 3%; */
+            /* padding: 6rem; */
+            color: #00BFF0;
         }
         .display-4 {
             /* background-color: white; */
@@ -82,10 +90,8 @@ body {
             margin-top: 18%;
             /* width: 59%; */
         }
-            .jumbotron.jumbotron-fluid {
+           
                 
-                    margin-top: -8%;
-                }
             .menu-icon-img img {
                     width: 50px;
                 }
@@ -96,30 +102,90 @@ body {
                 .menu-icon-img:hover img {
                     transform: scale(1.1); /* Increase the size on hover */
                 }
-            }
-            @media screen and (min-width: 1024px) {
-                .lead {
-                    margin-left: 46%;
-                    margin-right: 2%;
-                    font-size: 2.1rem;
-                    font-weight: 350;
-                    /* margin-left: 159px; */
-                    /* text-align: left; */
-                    padding: 2%;
-                    margin-top: 20%;
-                    /* width: 59%; */
+                .container, .container-fluid,  {
+                    width: 100%;
+                    padding-right: 40px;
+                    padding-left: 40px;
+                    margin-right: auto;
+                    margin-left: auto;
                 }
-                .display-4 {
-                    /* background-color: white; */
-                    font-size: 4.5rem;
-                    font-weight: 420;
-                    line-height: 1.2;
-                    margin-top: -63%;
-                    text-align: left;
-                    padding: 2%;
-                    margin-left: 5%;
-                }
-       
             }
+        
+            @media screen and (min-width 1024px){  
+                
+                  .navbar-nav{
+                    font-size: 1.4rem;
+                  }
+                  #back-arrow {
+                    margin-left: 20px;
+                    margin-top: 2%;
+                    margin-bottom:2%;
+                    padding-bottom: 3%;
+                    /* padding: 6rem; */
+                    color: #00BFF0;
+                }
+                    .jumbotron-fluid {
+                        margin-top: -126px;
+                        padding-right: 12%;
+                        padding-left: 12%;
+                        border-radius: 0;
+                    }
+                    
+                    .container, .container-fluid,  {
+                        width: 83%;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                        margin-right: auto;
+                        margin-left: auto;
+                    } 
+                    
+                    .display-4 {
+                        /* background-color: white; */
+                        font-size: 7.5rem;
+                        font-weight: 300;
+                        line-height: 1.2;
+                        margin-top: -58%;
+                        text-align: left;
+                        padding: 2%;
+                        margin-left: 5%;
+                    }
+                    .lead {
+                        margin-left: 46%;
+                        margin-right: 2%;
+                        font-size: 1.5rem;
+                        font-weight: 350;
+                        /* margin-left: 159px; */
+                        /* text-align: left; */
+                        padding: 2%;
+                        margin-top: 26%;
+                        /* width: 59%; */
+                    }
+                }
+                    @media screen and (min-width 1920px) { 
+                        .navbar-nav{
+                            font-size: 1.6rem;
+                          }
+                        .jumbotron.jumbotron-fluid {
+                            margin-left: 200px; margin-right:
+                        }
+                        .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+                            width: 100%;
+                            padding-right: 120px;
+                            padding-left: 120px;
+                            margin-right: auto;
+                            margin-left: auto;
+                        }
+                        .container-fluid img {
+                            justify-content: center;
+                            width: 100%;
+                            padding-right: 200px;
+                            padding-left: 200px;
+                            border-radius: 24px;
+                        }
+                        
+                    }
+
+                
+            
     
      
