@@ -17,3 +17,16 @@ body {
         background-color: black;
     }
     .lead {color: white;}
+    #back-arrow {
+        padding: 1rem; color: 
+        #00BFF0;
+    }
+    @media (min-width: 768px){
+        .centered-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    }
+     
