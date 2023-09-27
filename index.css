@@ -5,35 +5,31 @@ body {
 .collapse.navbar-collapse.ml-auto {
     justify-content: right;
 }
-.zoom-on-hover {
-    transition: transform 0.3s; /* Apply transition to the transform property */
-  }
-  
-
-  /* Add hover effect for zooming in */
-  .zoom-on-hover:hover {
-    transform: scale(1.05); /* Scale up by 5% */
-  }
-.navbar-dark .navbar-toggler {
-    color: rgba(255,255,255,.5);
-    /* border-color: #17a2b8; */
+.active .nav-link {
+    color: #F23580; /* Change this to the desired color */
 }
 
-.centered-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* This ensures the image is centered vertically on the viewport */
-}
-.centered-image img {
-    margin-top: -25%;
-    width: 77%;
-}
 
-    .lead {color: white;}
+
+.text-body-secondary{
+    color: white;
+}
    
-    @media (min-width: 768px){
-        .navbar-nav {font-size: 1.4rem;}
+   
+    @media (min-width: 768px) {
+        .navbar-nav {font-size: 1.4rem;
+        }
+        .text-body-secondary {
+            padding: 2%;
+            margin-top: 13%;
+            margin-left: 46%;
+            font-size: 1.4rem;
+            font-weight: 400;
+            display: flex;
+            width: 44%;
+            text-align: left;
+            /* justify-content: right; */
+        }
         .jumbotron.jumbotron-fluid {
             color: #00BFF0;
             background-color: transparent;
@@ -46,8 +42,7 @@ body {
         
         /* Add a box shadow on hover */
         .navbar-toggler:hover {
-            background-color:#white
-            ;
+          
             box-shadow: -1px 0px 13px 4px white /* Adjust the values as needed */;
         }
         #back-arrow {
@@ -59,17 +54,12 @@ body {
             /* padding: 6rem; */
             color: #00BFF0;
         }
-        .display-4 {
-            /* background-color: white; */
-            font-size: 4.5rem;
-            font-weight: 420;
-            line-height: 1.2;
-            margin-top: -64%;
-            text-align: left;
-            padding: 2%;
-        }
+       
         .container {
             margin-top: -50px;
+        }
+        .container-fluid {
+            width: 87%;
         }
         .centered-image img {
             margin-top: -72%;
@@ -79,102 +69,85 @@ body {
             width: 100%;
             border-radius: 25px;
         }
-        .lead {
-            margin-left: 46%;
-            margin-right: 2%;
-            font-size: 1.5rem;
-            font-weight: 350;
-            /* margin-left: 159px; */
-            /* text-align: left; */
+        .h3, h3 {
+            margin-left: 4%;
             padding: 2%;
-            margin-top: 18%;
-            /* width: 59%; */
+            margin-top: -60%;
+            font-size: 2.5rem;
         }
-           
-                
-            .menu-icon-img img {
+       
+       
+        .menu-icon-img img {
                     width: 50px;
                 }
-                .menu-icon-img img {
+         .menu-icon-img img {
                     transition: transform 0.3s; /* Add a smooth transition effect */
                 }
             
-                .menu-icon-img:hover img {
+        .menu-icon-img:hover img {
                     transform: scale(1.1); /* Increase the size on hover */
                 }
-                .container, .container-fluid,  {
-                    width: 100%;
-                    padding-right: 40px;
-                    padding-left: 40px;
-                    margin-right: auto;
-                    margin-left: auto;
-                }
-            }
+        .container-fluid{ 
+                    width: 80%;
+        }
+    }
         
-            @media screen and (min-width 1024px){  
+     
+    @media (min-width 1024px)
+    { 
                 
-                  .navbar-nav{
-                    font-size: 1.4rem;
-                  }
-                  #back-arrow {
-                    margin-left: 20px;
-                    margin-top: 2%;
-                    margin-bottom:2%;
-                    padding-bottom: 3%;
+     .navbar-nav{
+        font-size: 1.4rem;
+     }
+     #back-arrow {
+         margin-left: 20px;
+         margin-top: 2%;
+         margin-bottom:2%;
+        padding-bottom: 3%;
                     /* padding: 6rem; */
-                    color: #00BFF0;
-                }
-                    .jumbotron-fluid {
-                        margin-top: -126px;
-                        padding-right: 12%;
-                        padding-left: 12%;
-                        border-radius: 0;
+         color: #00BFF0;
+        }
+        .jumbotron-fluid {
+        margin-top: -126px;
+        padding-right: 12%;
+        padding-left: 12%;
+         border-radius: 0;
                     }
                     
-                    .container, .container-fluid,  {
-                        width: 83%;
-                        padding-right: 15px;
-                        padding-left: 15px;
-                        margin-right: auto;
-                        margin-left: auto;
-                    } 
+         .container-fluid
+        { 
+         margin-right: auto;
+            margin-left: auto;
+        }
+        .h3, h3 {
+          margin-left: 4%;
+         padding: 2%;
+          margin-top: -60%;
+         font-size: 2.5rem;
+        }
+        .text-body-secondary{        
+                       
+          margin-top: 19%;
+         padding-right: 4%;
+        }
                     
-                    .display-4 {
-                        /* background-color: white; */
-                        font-size: 7.5rem;
-                        font-weight: 300;
-                        line-height: 1.2;
-                        margin-top: -58%;
-                        text-align: left;
-                        padding: 2%;
-                        margin-left: 5%;
-                    }
-                    .lead {
-                        margin-left: 46%;
-                        margin-right: 2%;
-                        font-size: 1.5rem;
-                        font-weight: 350;
-                        /* margin-left: 159px; */
-                        /* text-align: left; */
-                        padding: 2%;
-                        margin-top: 26%;
-                        /* width: 59%; */
-                    }
-                }
-                    @media screen and (min-width 1920px) { 
+               
+    }
+                    
+                  
+            
+                    @media (min-width 1920px) { 
                         .navbar-nav{
-                            font-size: 1.6rem;
+                            font-size: 2rem;
+                            padding: 2%;
+
                           }
                         .jumbotron.jumbotron-fluid {
                             margin-left: 200px; margin-right:
                         }
-                        .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-                            width: 100%;
-                            padding-right: 120px;
-                            padding-left: 120px;
-                            margin-right: auto;
-                            margin-left: auto;
-                        }
+                     .container-fluid{ 
+                        width: 80%;
+                     }
                         .container-fluid img {
                             justify-content: center;
                             width: 100%;
@@ -182,6 +155,17 @@ body {
                             padding-left: 200px;
                             border-radius: 24px;
                         }
+                        .text-body-secondary{
+                            margin-top: 20%;
+                            margin-left: 46%;
+                            font-size: 1.6rem;
+                            font-weight: 400;
+                            display: flex;
+                            width: 50%;
+                            text-align: right;
+                            /* justify-content: right; */
+                        }
+                        
                         
                     }
 
