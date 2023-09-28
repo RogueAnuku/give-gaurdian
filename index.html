@@ -20,23 +20,20 @@
       </script>
     </head>
 <body>
-    <div class="content-container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: black!important; box-shadow: -1px 1px 14px 0px #00BFF0">
-            <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">
             <img src="./Image/Logo.gif" width="75px">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-           <div class="menu-icon-img"><img src="./Image/menu.png"> </div>
-            </button>
-            <div class="collapse navbar-collapse ml-auto" id="navbarNav">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="menu-icon-img"><img src="./Image/menu.png"> </div>
+        </button>
+        <div class="collapse navbar-collapse ml-auto" id="navbarNav">
             <ul class="navbar-nav">
-                 <li>
+                <li class="nav-item">
                     <a class="nav-link" href="https://rogueanuku.github.io/Homework-20-new/" >Home</a>
                 </li>
                 <li class="nav-item">
-                    <li class="nav-item active" >
-                        <a class="nav-link" href="#" >Projects</a>
-                    </li>
+                    <a class="nav-link" href="#" >Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" >About</a>
@@ -48,7 +45,8 @@
                     <a class="nav-link" href="#" >Contact</a>
                 </li>
             </ul>
-        </nav>
+        </div>
+    </nav>
     
         <div id="back-arrow" style="color: #00BFF0;">
             <a href="#">
@@ -57,34 +55,38 @@
         </div>
         <div class="jumbotron jumbotron-fluid">
             <div class="container-fluid">
-                <img src="./Image/hands.jpeg">
-                <h3> Give Guardian</h3>      
-
+                <div class="jumbotron-content">
+                    <img src="./Image/hands.jpeg">
+                    
+                        <h3>Give Guardian</h3>
+                        <p>Providing peace of mind to those who support charitable causes. Give Guardian is a web browser extension designed to verify nonprofit organizations.</p>
+                    
+                </div>
             </div>
-            <div class="text-body-secondary"><small>Providing peace of mind to those who support charitable causes. Give Guardian is a web browser extension designed to verify nonprofit organizations</small>
         </div>
-       
-    </div>
-   
-    <footer class="footer">
-           
+    
+</body>   
+<footer class="footer">
+    <div class="container">
         <div class="row">
-               
-                    <ul class="footer-links">
-                        <li><a href="https://rogueanuku.github.io/Homework-20-new/" target="_blank">Home</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                
-               
+            <div class="col-md-6">
+                <ul class="footer-links">
+                    <li><a href="https://rogueanuku.github.io/Homework-20-new/" target="_blank">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-right"> <!-- This column will align its content to the right -->
+                <div class="footer-content">
                     <img id="footer-image" src="./Image/IconOnly_Transparent.png">
-                    <p>© Proudly created by Anika McPhee 2023.</p>
-                
+                    <p class="footer-text">© Proudly created by Anika McPhee 2023.</p>
+                </div>
+            </div>
         </div>
-      
-    </footer>     
+    </div>
+</footer>
     
 
 

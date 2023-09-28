@@ -1,3 +1,14 @@
+.navbar {
+    box-shadow: -1px 1px 14px 0px #00bFF0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1030;
+}
+.bg-dark {
+    background-color: #000!important;
+}
 body {
     background-color: black;
 }
@@ -15,88 +26,92 @@ a {
     text-decoration: none;
     background-color: transparent;
 }
-
-
-.navbar {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1030; /* Ensure it's above other elements */
-}
-/* Style for the footer links */
-.footer-links {
-    list-style-type: none;
-    padding: 0;
-}
-
-.footer-links li {
-    margin-bottom: 10px;
-}
-
-.footer-links a {
-    text-decoration: none;
-    color: #f23580;
-    transition: text-decoration 0.3s; /* Add a smooth transition effect */
-}
-
-.footer-links a:hover {
-    text-decoration: underline; /* Underline the link on hover */
-    color: #00BFF0; /* Change the link color on hover */
-}
-
-
-.text-body-secondary{
+.jumbotron-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     color: white;
 }
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-    /* width: 100%; */
-    /* padding-right: 15px; */
-    /* padding-left: 15px; */
-    margin-right: auto;
-    margin-left: auto;
+#back-arrow {
+    font-size: 1.4rem;
+    margin-left: 20px;
+    margin-top: 15%;
+    margin-bottom: 0%;
+    /* padding-bottom: 3%; */
+    /* padding: 6rem; */
+    color: #00BFF0;
 }
+
+
+
+
+
+
+
    
     .jumbotron {
+        background-color: #000;
     padding: 0rem 0rem;
     }
-   
+    .col-md-6 p{
+       
+            margin-top: -36px;
+            /* margin-bottom: 1rem; */
+        }
+        .footer {
+            padding: 1rem;
+            box-shadow: -1px 1px 14px 0px #00BFF0;
+            margin-top: 16%;
+            width: 100%;
+            position: fixed;
+        }
+        /* Add this CSS to your existing stylesheet */
+        .footer-content {
+            display: flex;
+            align-items: center; /* Vertically center the content */
+        }
+        
+        #footer-image {
+            width: 25%; /* Adjust the image width as needed */
+            margin-right: 20px; /* Add spacing between the image and text */
+        }
+        
+        .footer-text {
+            font-size: 14px; /* Adjust the font size as needed */
+            color: #fff; /* Text color */
+        }
+        
+        /* Style for the footer links */
+        .footer-links {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            text-decoration: none;
+            color: #f23580;
+            transition: text-decoration 0.3s; /* Add a smooth transition effect */
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline; /* Underline the link on hover */
+            color: #00BFF0; /* Change the link color on hover */
+        }
+        
+      
     @media (min-width: 768px) {
         .navbar-nav {font-size: 1.4rem;
         }
-        .text-body-secondary {
-            padding: 1%;
-            margin-top: 12%;
-            margin-left: 48%;
-            font-size: 1.4rem;
-            font-weight: 400;
-            /* display: flex; */
-            width: 42%;
-            text-align: left;
-            /* justify-content: right; */
-        }
-        .jumbotron.jumbotron-fluid {
-            color: #00BFF0;
-            background-color: transparent;
-        }
-        
-           
-        .navbar-toggler {
-            background-color: transparent;
-            border: none;
-        }
-        
+  
         /* Add a box shadow on hover */
        
-        #back-arrow {
-            font-size: 1.4rem;
-            margin-left: 20px;
-            margin-top: 15%;
-            margin-bottom: 0%;
-            /* padding-bottom: 3%; */
-            /* padding: 6rem; */
-            color: #00BFF0;
-        }
+       
        
        
        
@@ -127,17 +142,9 @@ a {
         .menu-icon-img:hover img {
                     transform: scale(1.1); /* Increase the size on hover */
                 }
-        .container-fluid{ 
-                    width: 80%;
-        }
+       
         /* Style for the footer */
-        .footer {
-            background-color: black;
-            color: #fff;
-            background-color: black;
-            box-shadow: 9px 5px 39px 0px #00BFF0;
-            width: 100%;
-        }
+        
 
 
 /* Style for the contact info */
@@ -204,12 +211,8 @@ a {
 #footer-image:hover {
     transform: scale(1.2); /* Zoom in by 20% on hover */
 }
-
 /* Adjust styles as needed to match your website's design */
-.col-md-6 p {
-    margin-top: -62px;
-    /* margin-bottom: 1rem; */
-}
+
 }
         
      
@@ -227,13 +230,7 @@ a {
                     /* padding: 6rem; */
          color: #00BFF0;
         }
-        .jumbotron-fluid {
-            margin-bottom: 17%;
-            padding-top: 0px;
-            padding-right: 0;
-            padding-left: 0;
-            border-radius: 0;
-        }
+     
                     
          .container-fluid
         { 
@@ -246,18 +243,7 @@ a {
           margin-top: -60%;
          font-size: 2.5rem;
         }
-        .text-body-secondary {
-            margin-right: 19%;
-            padding: 1%;
-            margin-top: 15%;
-            margin-left: 48%;
-            font-size: 1.4rem;
-            font-weight: 400;
-            /* display: flex; */
-            /* width: 42%; */
-            text-align: left;
-            /* justify-content: right; */
-        }         
+           
                
     }
                     
@@ -269,9 +255,7 @@ a {
                             padding: 2%;
 
                           }
-                        .jumbotron.jumbotron-fluid {
-                            margin-left: 200px; margin-right:
-                        }
+                     
                      .container-fluid{ 
                         width: 80%;
                      }
@@ -282,16 +266,7 @@ a {
                             padding-left: 200px;
                             border-radius: 24px;
                         }
-                        .text-body-secondary{
-                            margin-top: 20%;
-                            margin-left: 46%;
-                            font-size: 1.6rem;
-                            font-weight: 400;
-                            display: flex;
-                            width: 50%;
-                            text-align: right;
-                            /* justify-content: right; */
-                        }
+                        
                         
                         
                     }
