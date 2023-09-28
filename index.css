@@ -57,6 +57,9 @@ a {
     margin-left: auto;
 }
    
+    .jumbotron {
+    padding: 0rem 0rem;
+    }
    
     @media (min-width: 768px) {
         .navbar-nav {font-size: 1.4rem;
@@ -102,8 +105,8 @@ a {
             width: 77%;
         }
         .container-fluid img {
-            margin-top: -14%;
-            width: 100%;
+           
+            width: 90%;
             border-radius: 25px;
         }
         .h3, h3 {
@@ -133,6 +136,7 @@ a {
             color: #fff;
             background-color: black;
             box-shadow: 9px 5px 39px 0px #00BFF0;
+            width: 100%;
         }
 
 
