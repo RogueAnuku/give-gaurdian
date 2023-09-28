@@ -9,6 +9,17 @@
 .bg-dark {
     background-color: #000!important;
 }
+.menu-icon-img img {
+    width: 50px;
+}
+.menu-icon-img img {
+    transition: transform 0.3s; /* Add a smooth transition effect */
+}
+
+.menu-icon-img:hover img {
+    transform: scale(1.1); /* Increase the size on hover */
+}
+
 body {
     background-color: black;
 }
@@ -26,13 +37,30 @@ a {
     text-decoration: none;
     background-color: transparent;
 }
-.jumbotron-content {
-    display: flex;
-    align-items: center;
+.jumbotron {
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    color: white;
+    width: 90%;
+    background-color: #000;
+    padding: 0rem 0rem;
+}
+
+.h3, h3 {color: #00BFF0;
+        margin-left: 4%;
+        padding: 2%;
+        margin-top: -60%;
+        font-size: 2.5rem;
+    }
+
+.jumbotron p {
+    font-weight: 300;
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin-top: 18%;
+    margin-left: 46%;
+    color: #fff;
+    /* font-size: 16px; */
 }
 #back-arrow {
     font-size: 1.4rem;
@@ -41,54 +69,50 @@ a {
     margin-bottom: 0%;
     /* padding-bottom: 3%; */
     /* padding: 6rem; */
-    color: #00BFF0;
+    color: #F23580;
+}
+a {
+    color: #f23580;
+    text-decoration: none;
+    background-color: transparent;
 }
 
-
-
-
-
-
-
    
-    .jumbotron {
-        background-color: #000;
-    padding: 0rem 0rem;
-    }
-    .col-md-6 p{
-       
-            margin-top: -36px;
-            /* margin-bottom: 1rem; */
+   .container-fluid img {
+           
+            width: 100%;
+            border-radius: 25px;
         }
+     
+   
         .footer {
+           
             padding: 1rem;
             box-shadow: -1px 1px 14px 0px #00BFF0;
-            margin-top: 16%;
             width: 100%;
-            position: fixed;
-        }
-        /* Add this CSS to your existing stylesheet */
-        .footer-content {
-            display: flex;
-            align-items: center; /* Vertically center the content */
+            background-color: #000;
         }
         
+        /* Add this CSS to your existing stylesheet */
+       
         #footer-image {
-            width: 25%; /* Adjust the image width as needed */
-            margin-right: 20px; /* Add spacing between the image and text */
+            width: 170px;
+           
         }
         
         .footer-text {
-            font-size: 14px; /* Adjust the font size as needed */
-            color: #fff; /* Text color */
+            font-size: 12px;
+            color: #495057;
         }
-        
         /* Style for the footer links */
         .footer-links {
             list-style-type: none;
             padding: 0;
         }
-        
+        dl, ol, ul {
+            /* margin-top: 0; */
+            /* margin-bottom: 21rem; */
+        }
         .footer-links li {
             margin-bottom: 10px;
         }
@@ -103,175 +127,108 @@ a {
             text-decoration: underline; /* Underline the link on hover */
             color: #00BFF0; /* Change the link color on hover */
         }
-        
+        .container-fluid footer img {
+            margin-left: 37%;
+            justify-content: center;
+            width: 25%;
+            margin-top: -63px;
+        }
       
-    @media (min-width: 768px) {
-        .navbar-nav {font-size: 1.4rem;
+      @media (min-width:768px) { 
+        .footer {
+            margin-top: 7%;
+            padding: 1rem;
+            box-shadow: -1px 1px 14px 0px #00BFF0;
+            width: 100%;
+            background-color: #000;
         }
-  
-        /* Add a box shadow on hover */
-       
-       
-       
-       
-       
-        .centered-image img {
-            margin-top: -72%;
-            width: 77%;
-        }
-        .container-fluid img {
-           
-            width: 90%;
-            border-radius: 25px;
-        }
-        .h3, h3 {
-            margin-left: 4%;
-            padding: 2%;
-            margin-top: -60%;
-            font-size: 2.5rem;
-        }
-       
-       
-        .menu-icon-img img {
-                    width: 50px;
-                }
-         .menu-icon-img img {
-                    transition: transform 0.3s; /* Add a smooth transition effect */
-                }
-            
-        .menu-icon-img:hover img {
-                    transform: scale(1.1); /* Increase the size on hover */
-                }
-       
-        /* Style for the footer */
-        
-
-
-/* Style for the contact info */
- 
-
-/* Style for social icons */
-.social-icons {
-    list-style: none;
-    padding: 0;
-}
-
-.social-icons li {
-    display: inline;
-    margin-right: 10px;
-}
-
-.social-icons a {
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-}
-.container-fluid footer{
-    position:absolute;
-}
-.col-md-6-footer {
-    text-align: left;
+      }
    
-}
-
-.container-fluid footer img {
-    margin-left: 37%;
-    justify-content: center;
-    width: 25%;
-    margin-top: -63px;
-}
-.container-fluid footer p {
-    text-align: right;
-    margin-top: -2rem;
-    font-size: 0.8rem;
-    padding-right: 9px;
-    margin-top: -49px;
-}
-    
-    #footer-nav ul li {
-        list-style: none; /* Remove the list markers (dots) */ color: #f23580;
+          
+@media (min-width:1024px){
+        #back-arrow {
+    font-size: 1.4rem;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 0%;
+    /* padding-bottom: 3%; */
+    /* padding: 6rem; */
+    color: #F23580;} 
+    .jumbotron {
+        margin-top: -2%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        width: 72%;
+        background-color: #000;
+        padding: 0rem 0rem;
     }
-    a {
-        color: #f23580;
-        text-decoration: none;
-        background-color: transparent;
-    }
-    a:hover {
-        color: #00BFF0;
-        text-decoration: underline;
-    }
-#footer-image {
-    
-        width: 210px;
-        margin-left: 12%;;
-       
-        transition: transform 0.3s ease; /* Add a smooth transition effect */
-}
 
-#footer-image:hover {
-    transform: scale(1.2); /* Zoom in by 20% on hover */
-}
-/* Adjust styles as needed to match your website's design */
-
-}
         
-     
-    @media (min-width 1024px)
-    { 
-                
-     .navbar-nav{
+      }
+@media (min-width:1920px){
+       .navbar-nav {
         font-size: 1.4rem;
-     }
-     #back-arrow {
-         margin-left: 20px;
-         margin-top: 2%;
-         margin-bottom:2%;
-        padding-bottom: 3%;
-                    /* padding: 6rem; */
-         color: #00BFF0;
+       }
+        .jumbotron-content {
+              
+                    margin-right: auto;
+                    margin-left: auto;
+                   
+            }
+            .h3, h3 {
+                color: #00BFF0;
+                margin-left: 1%;
+                padding: 2%;
+                margin-top: -60%;
+                font-size: 4rem;
+            }
+            .jumbotron p {
+                margin-right: 15%;
+                /* padding-right: 5%; */
+                font-weight: 300;
+                font-size: 2rem;
+                /* padding: 1rem; */
+                margin-top: 23%;
+                margin-left: 43%;
+                color: #fff;
+                /* font-size: 16px; */
+            }
+            #back-arrow {
+                font-size: 2.2rem;
+                margin-left: 7%;
+                margin-top: 6%;
+                margin-bottom: 0%;
+                /* padding-bottom: 3%; */
+                /* padding: 6rem; */
+                color: #F23580;
+            }
+            .container-fluid img {
+                margin-right: auto;
+                margin-left: auto;
+                width: 78%;
+                border-radius: 25px;
+            }
+        .col-md-6 {
+            font-size: 1.3rem;
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
         }
-     
-                    
-         .container-fluid
-        { 
-         margin-right: auto;
-            margin-left: auto;
+        .footer {
+            margin-top: 10%;
+            position: absolute;
+            max-height: 100vh;
+            /* overflow-y: auto; */
+            padding: 1rem;
+            box-shadow: -1px 1px 14px 0px #00BFF0;
+            width: 100%;
+            background-color: #000;
         }
-        .h3, h3 {
-          margin-left: 4%;
-         padding: 2%;
-          margin-top: -60%;
-         font-size: 2.5rem;
+        #footer-image {
+            width: 240px;
         }
-           
-               
     }
-                    
-                  
-            
-                    @media (min-width 1920px) { 
-                        .navbar-nav{
-                            font-size: 2rem;
-                            padding: 2%;
-
-                          }
-                     
-                     .container-fluid{ 
-                        width: 80%;
-                     }
-                        .container-fluid img {
-                            justify-content: center;
-                            width: 100%;
-                            padding-right: 200px;
-                            padding-left: 200px;
-                            border-radius: 24px;
-                        }
-                        
-                        
-                        
-                    }
-
-                
             
     
      
