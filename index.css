@@ -16,11 +16,7 @@ a {
     background-color: transparent;
 }
 
-.content-container {
-    padding-top: 70px; /* Adjust this value to match your navbar height */
-    margin-top: 0; /* Reset margin */
-    overflow-x: hidden; /* Hide horizontal scrollbar if needed */
-}
+
 .navbar {
     position: fixed;
     width: 100%;
@@ -28,11 +24,37 @@ a {
     left: 0;
     z-index: 1030; /* Ensure it's above other elements */
 }
+/* Style for the footer links */
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
 
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #f23580;
+    transition: text-decoration 0.3s; /* Add a smooth transition effect */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline the link on hover */
+    color: #00BFF0; /* Change the link color on hover */
+}
 
 
 .text-body-secondary{
     color: white;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    /* width: 100%; */
+    /* padding-right: 15px; */
+    /* padding-left: 15px; */
+    margin-right: auto;
+    margin-left: auto;
 }
    
    
@@ -40,35 +62,33 @@ a {
         .navbar-nav {font-size: 1.4rem;
         }
         .text-body-secondary {
-            padding: 2%;
-            margin-top: 13%;
-            margin-left: 46%;
+            padding: 1%;
+            margin-top: 12%;
+            margin-left: 48%;
             font-size: 1.4rem;
             font-weight: 400;
-            display: flex;
-            width: 44%;
+            /* display: flex; */
+            width: 42%;
             text-align: left;
             /* justify-content: right; */
         }
         .jumbotron.jumbotron-fluid {
             color: #00BFF0;
             background-color: transparent;
-            margin-top: -5%;
         }
+        
+           
         .navbar-toggler {
             background-color: transparent;
             border: none;
         }
         
         /* Add a box shadow on hover */
-        .navbar-toggler:hover {
-          
-            box-shadow: -1px 0px 13px 4px white /* Adjust the values as needed */;
-        }
+       
         #back-arrow {
             font-size: 1.4rem;
             margin-left: 20px;
-            margin-top: 4%;
+            margin-top: 15%;
             margin-bottom: 0%;
             /* padding-bottom: 3%; */
             /* padding: 6rem; */
@@ -76,14 +96,13 @@ a {
         }
        
        
-        .container-fluid {
-            width: 87%;
-        }
+       
         .centered-image img {
             margin-top: -72%;
             width: 77%;
         }
         .container-fluid img {
+            margin-top: -14%;
             width: 100%;
             border-radius: 25px;
         }
@@ -109,14 +128,15 @@ a {
                     width: 80%;
         }
         /* Style for the footer */
-.footer {
-    background-color: black;
-    color: #fff;
-    padding: 30px 0;
-}
+        .footer {
+            background-color: black;
+            color: #fff;
+            background-color: black;
+            box-shadow: 9px 5px 39px 0px #00BFF0;
+        }
+
 
 /* Style for the contact info */
-.footer p {margin-top: 30px}
  
 
 /* Style for social icons */
@@ -142,12 +162,7 @@ a {
     text-align: left;
    
 }
-.container-fluid footer {
-   
-    padding: 1rem;
-    background-color: black;
-    box-shadow: -1px 1px 14px 0px #00BFF0;
-}
+
 .container-fluid footer img {
     margin-left: 37%;
     justify-content: center;
@@ -161,10 +176,7 @@ a {
     padding-right: 9px;
     margin-top: -49px;
 }
-    dl, ol, ul {
-        margin-top: 0;
-        margin-bottom: -3rem;
-    }
+    
     #footer-nav ul li {
         list-style: none; /* Remove the list markers (dots) */ color: #f23580;
     }
@@ -178,7 +190,11 @@ a {
         text-decoration: underline;
     }
 #footer-image {
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    
+        width: 210px;
+        margin-left: 12%;;
+       
+        transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
 
 #footer-image:hover {
@@ -186,8 +202,11 @@ a {
 }
 
 /* Adjust styles as needed to match your website's design */
-
-    }
+.col-md-6 p {
+    margin-top: -62px;
+    /* margin-bottom: 1rem; */
+}
+}
         
      
     @media (min-width 1024px)
@@ -205,11 +224,12 @@ a {
          color: #00BFF0;
         }
         .jumbotron-fluid {
-        margin-top: -126px;
-        padding-right: 12%;
-        padding-left: 12%;
-         border-radius: 0;
-                    }
+            margin-bottom: 17%;
+            padding-top: 0px;
+            padding-right: 0;
+            padding-left: 0;
+            border-radius: 0;
+        }
                     
          .container-fluid
         { 
@@ -222,12 +242,18 @@ a {
           margin-top: -60%;
          font-size: 2.5rem;
         }
-        .text-body-secondary{        
-                       
-          margin-top: 19%;
-         padding-right: 4%;
-        }
-                    
+        .text-body-secondary {
+            margin-right: 19%;
+            padding: 1%;
+            margin-top: 15%;
+            margin-left: 48%;
+            font-size: 1.4rem;
+            font-weight: 400;
+            /* display: flex; */
+            /* width: 42%; */
+            text-align: left;
+            /* justify-content: right; */
+        }         
                
     }
                     

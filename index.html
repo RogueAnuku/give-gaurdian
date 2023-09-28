@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head> 
-    <!-- Include CSS libraries -->
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="index.css"> 
-  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <!-- Include CSS and JavaScript libraries -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="./index.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="script.js"></script> <!-- Include your JavaScript file here -->
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script>
+        $(document).ready(function () {
+          // Smooth scroll and mobile navigation toggle scripts
+          // ... (Your existing scripts)
+        });
+      </script>
+    </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: black!important; box-shadow: -1px 1px 14px 0px #00BFF0">
-        <a class="navbar-brand" href="#">
+    <div class="content-container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: black!important; box-shadow: -1px 1px 14px 0px #00BFF0">
+            <a class="navbar-brand" href="#">
             <img src="./Image/Logo.gif" width="75px">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
            <div class="menu-icon-img"><img src="./Image/menu.png"> </div>
-        </button>
-        <div class="collapse navbar-collapse ml-auto" id="navbarNav">
+            </button>
+            <div class="collapse navbar-collapse ml-auto" id="navbarNav">
             <ul class="navbar-nav">
                  <li>
                     <a class="nav-link" href="https://rogueanuku.github.io/Homework-20-new/" >Home</a>
@@ -39,49 +48,58 @@
                     <a class="nav-link" href="#" >Contact</a>
                 </li>
             </ul>
-        </div>
-    </nav>
-    <div class="content-container">
+        </nav>
+    
         <div id="back-arrow" style="color: #00BFF0;">
             <a href="#">
             <i class="fas fa-arrow-left"></i>
             </a>
         </div>
         <div class="jumbotron jumbotron-fluid">
-        <div class="container-fluid">
-            <img src="./Image/hands.jpeg">
-            <h3>
+            <div class="container-fluid">
+             <img src="./Image/hands.jpeg">
+                <h3>
                 Give Guardian</h3>          
-        </div>
+            </div>
         <div class="text-body-secondary"><small>Providing peace of mind to those who support charitable causes. Give Guardian is a web browser extension designed to verify nonprofit organizations</small>
         </div>
-        
-
-
-
-
-    </div>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>Email: anika.mcphee@gmail.com</p>
-                    
-                </div>
-                <div class="col-md-6">
-                    <ul>
-                        <li><a href="https://rogueanuku.github.io/Homework-20-new/"  target="_blank">Home</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>  
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="footer-links">
+                            <li><a href="https://rogueanuku.github.io/Homework-20-new/" target="_blank">Home</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Resume</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img id="footer-image" src="./Image/IconOnly_Transparent.png">
+                        <p>© Proudly created by Anika McPhee 2023.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>     
+    </div>
+   
+    
     <!-- Include Bootstrap JavaScript and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
+<script src="script.js">
+    $(document).ready(function() {
+    // Add hover effect to list items
+    $('#footer-nav ul li').hover(
+        function() {
+            $(this).css('background-color', '#f0f0f0'); // Change background color on hover
+        },
+        function() {
+            $(this).css('background-color', ''); // Reset background color on mouseout
+        }
+    );
+});
+</script>
 </html>
