@@ -133,6 +133,18 @@ a {
             width: 25%;
             margin-top: -63px;
         }
+        .carousel-item {
+            position: relative;
+            display: none;
+            float: left;
+            width: 50%;
+            margin-right: -100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transition: -webkit-transform .6s ease-in-out;
+            transition: transform .6s ease-in-out;
+            transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out;
+        }
       
       @media (min-width:768px) { 
         .footer {
@@ -166,69 +178,86 @@ a {
 
         
       }
-@media (min-width:1920px){
-       .navbar-nav {
-        font-size: 1.4rem;
-       }
-        .jumbotron-content {
-              
-                    margin-right: auto;
-                    margin-left: auto;
-                   
+     
+        @media (min-width: 1920px) {
+            .navbar-nav {
+                font-size: 1.4rem;
             }
-            .h3, h3 {
-                color: #00BFF0;
-                margin-left: 1%;
-                padding: 2%;
-                margin-top: -60%;
-                font-size: 4rem;
+            
+            .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+                width: 86%;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .jumbotron-content {
+                text-align: center; /* Center the text and image horizontally */
+            }
+            .jumbotron-content {
+                text-align: center;
+                border-radius: 25px;
+                overflow: hidden;
             }
             .jumbotron p {
-                margin-right: 15%;
-                /* padding-right: 5%; */
-                font-weight: 300;
+                padding-right: 3%;
+                padding-left: 2%;
+                font-weight: 400;
                 font-size: 2rem;
                 /* padding: 1rem; */
                 margin-top: 23%;
                 margin-left: 43%;
                 color: #fff;
                 /* font-size: 16px; */
+                padding-left: 2%;
+            }
+            .container-fluid img {
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+                border-radius: 25px;
+            }
+            .h3, h3 {
+                text-align: left;
+                color: #00BFF0;
+                margin-left: 8%;
+                padding: 2%;
+                /* margin-top: -60%; */
+                font-size: 4rem;
             }
             #back-arrow {
                 font-size: 2.2rem;
                 margin-left: 7%;
                 margin-top: 6%;
                 margin-bottom: 0%;
-                /* padding-bottom: 3%; */
-                /* padding: 6rem; */
                 color: #F23580;
             }
-            .container-fluid img {
-                margin-right: auto;
-                margin-left: auto;
-                width: 78%;
-                border-radius: 25px;
+            .col-md-6 {
+                font-size: 1.3rem;
+                -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+                max-width: 50%;
             }
-        .col-md-6 {
-            font-size: 1.3rem;
-            -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-            max-width: 50%;
+            .footer {
+                                padding: 1rem;
+                box-shadow: -1px 1px 14px 0px #00BFF0;
+                background-color: #000;
+                width: 100vw; /* Use viewport width to make it full width */
+                position: relative; /* Use relative positioning */
+            }
+        
+            .footer-content {
+                text-align: center; /* Center the content horizontally */
+                margin: 0 auto; /* Center the content vertically */
+                max-width: 100%; /* Ensure content doesn't overflow */
+            }
+        
+            #footer-image {
+                width: 100%; /* Adjust the width to fit within centered content */
+                max-width: 240px; /* Set a maximum width if necessary */
+            }
         }
-        .footer {
-            margin-top: 10%;
-            position: absolute;
-            max-height: 100vh;
-            /* overflow-y: auto; */
-            padding: 1rem;
-            box-shadow: -1px 1px 14px 0px #00BFF0;
-            width: 100%;
-            background-color: #000;
-        }
-        #footer-image {
-            width: 240px;
-        }
-    }
+        
             
     
      
