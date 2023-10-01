@@ -6,6 +6,9 @@
     left: 0;
     z-index: 1030;
 }
+.navbar-name {
+    color: #F23580;
+}
 .bg-dark {
     background-color: #000!important;
 }
@@ -137,7 +140,7 @@ a {
             position: relative;
             display: none;
             float: left;
-            width: 50%;
+            width: 100%;
             margin-right: -100%;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
@@ -145,8 +148,32 @@ a {
             transition: transform .6s ease-in-out;
             transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out;
         }
-      
+        .carousel-inner {
+            padding-top: 2%;
+            /* margin-top: -2%; */
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+        .carousel-inner img{
+          
+                width: 50%;
+            
+        }
+        #carouselExampleCaptions {
+            background-color: white; /* Replace with your desired background color */
+          }
+        .h5, h5 {
+            padding-left: 16%;
+            font-weight: 300;
+            color: #f23580;
+            text-align: left;
+            font-size: 2rem;
+        }
+       
       @media (min-width:768px) { 
+
+      
         .footer {
             margin-top: 7%;
             padding: 1rem;
@@ -154,6 +181,7 @@ a {
             width: 100%;
             background-color: #000;
         }
+        
       }
    
           
