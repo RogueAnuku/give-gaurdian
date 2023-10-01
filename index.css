@@ -163,14 +163,75 @@ a {
         #carouselExampleCaptions {
             background-color: white; /* Replace with your desired background color */
           }
-        .h5, h5 {
-            padding-left: 16%;
+          .h5, h5 {
+           
             font-weight: 300;
-            color: #f23580;
+            color: #00bff0;
             text-align: left;
             font-size: 2rem;
         }
-       
+        .row {
+            color: #fff;
+            padding: 4%;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+        .row-3 {
+            margin-top: -4%;
+            color: #fff;
+            padding: 4%;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+        .col-md-6-header {
+            font-size: 1.6rem;
+            color: #F23580;
+        }
+     .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  border: 1px solid black;
+  border-radius: .25rem;
+  background-color: #000;
+}
+
+.card-img-container {
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-body {
+  background-color: black;
+  flex: 1 1 auto;
+  min-height: 2px;
+  padding: 1.25rem;
+  border-bottom-left-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}
+.col-md-6-header-1{
+    margin-top: -110px;
+    font-size: 1.6rem;
+    color: #F23580;
+}
       @media (min-width:768px) { 
 
       
