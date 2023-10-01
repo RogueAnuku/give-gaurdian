@@ -164,13 +164,13 @@ a {
             background-color: white; /* Replace with your desired background color */
           }
           .h5, h5 {
-           
             font-weight: 300;
             color: #00bff0;
             text-align: left;
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
         .row {
+            justify-content: center;
             color: #fff;
             padding: 4%;
             display: -ms-flexbox;
@@ -183,7 +183,7 @@ a {
         .row-3 {
             margin-top: -4%;
             color: #fff;
-            padding: 4%;
+            padding: 3%;
             display: -ms-flexbox;
             display: flex;
             -ms-flex-wrap: wrap;
@@ -204,6 +204,7 @@ a {
   border: 1px solid black;
   border-radius: .25rem;
   background-color: #000;
+  box-shadow: -1px 1px 14px 0px #00bff054;
 }
 
 .card-img-container {
@@ -214,7 +215,7 @@ a {
 }
 
 .card-img-top {
-  width: 100%;
+  width: 40%;
   height: auto;
   display: block;
 }
@@ -227,10 +228,20 @@ a {
   border-bottom-left-radius: .25rem;
   border-bottom-right-radius: .25rem;
 }
+.card-body-2 {
+    background-color: #fff;
+}
 .col-md-6-header-1{
     margin-top: -110px;
     font-size: 1.6rem;
     color: #F23580;
+}
+.row-header{
+    
+        margin-top: 3%;
+        font-size: 1.6rem;
+        color: #F23580;
+    
 }
       @media (min-width:768px) { 
 
