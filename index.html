@@ -1,51 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head> 
-     <!-- Include CSS and JavaScript libraries -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-     <link rel="stylesheet" type="text/css" href="./index.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-     <script src="script.js"></script> <!-- Include your JavaScript file here -->
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link
-     rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-     <script>
-        // Your smooth scroll script
-        $(document).ready(function () {
-            // Smooth scroll when clicking on the navigation links
-            $('a.nav-link[href*="#"]').not('[href="#"]').click(function (event) {
-                if (
-                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-                    location.hostname == this.hostname
-                ) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        event.preventDefault();
-                        $('html, body').animate(
-                            {
-                                scrollTop: target.offset().top
-                            },
-                            1000 // You can adjust the animation speed here (in milliseconds)
-                        );
-                    }
+
+<head>
+<!-- Include CSS and JavaScript libraries -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+<script src="./script.js"></script>
+<!-- Include your JavaScript file here -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<script>
+    // Your smooth scroll script
+    $(document).ready(function () {
+        // Smooth scroll when clicking on the navigation links
+        $('a.nav-link[href*="#"]').not('[href="#"]').click(function (event) {
+            if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                location.hostname == this.hostname
+            ) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').animate(
+                        {
+                            scrollTop: target.offset().top
+                        },
+                        1000 // You can adjust the animation speed here (in milliseconds)
+                    );
                 }
-            });
+            }
         });
-     </script>
-</head>
+    });
+</script>
+
+
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">
             <img src="./Image/Logo.gif" width="75px">
             <span class="navbar-name">ANIKA MCPHEE</span>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <div class="menu-icon-img"><img src="./Image/menu.png"> </div>
         </button>
         <div class="collapse navbar-collapse ml-auto" id="navbarNav">
@@ -53,11 +60,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#Home">Home</a>
                 </li>
-                
+
                 <li class="nav-item">
                     <a class="nav-link" href="#projects">Projects</a>
                 </li>
-                
+
                 <li class="nav-item">
                     <a class="nav-link" href="#About">About</a>
                 </li>
@@ -67,60 +74,69 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
-                
+
             </ul>
         </div>
     </nav>
-        <div id="back-arrow" style="color: #00BFF0;">
-            <a href="#">
-            <i class="fas fa-arrow-left"></i>
-            </a>
-        </div>
-       
-        <div class="jumbotron jumbotron-fluid">
+      
+    <div class="jumbotron jumbotron-fluid">
             <div class="container-fluid">
                 <div class="jumbotron-content">
-                    <img src="./Image/hands.jpeg">
-                    
+                    <div id="back-arrow">
+                        <a href="#">
+                        <i class="fas fa-arrow-left"></i>
+                        </a>
+                    </div>
+                                        
                         <h3>Give Guardian</h3>
-                        <p>Providing peace of mind to those who support charitable causes. Give Guardian is a web browser extension designed to verify nonprofit organizations.</p>
+                        <p>Granting reassurance to individuals who champion charitable endeavors, Give Guardian is a browser extension meticulously crafted to authenticate nonprofit organizations.</p>
                     
                 </div>
             </div>
-        </div>
+    </div>
         
-           
-              <div class="row" style="color: #00BFF0;">
+    <div class="row" style="color: #00BFF0;">
+            <div class="col-md-10">
                     The team:          
                     Anika McPhee (User Research),
                     Dhwani Trivedi (Coding),
                     Chiara Fallani (User Interface),
                     Desiree Henry (User Interface)
-              </div>
-            </div> 
+            </div>
+    </div> 
        
-        <div class="row">
-            <div class="col-md-6">
-                <div class="col-md-6-header"> Problem: </div>
-                <p> The philanthropic market is presently encountering hurdles in fostering user engagement and providing proof of authenticity. As a result, donor confidence has waned, leading to a decline in contributions. According to users, the length of time spent on task was a major pain point and a priority feature in our feature maxrix</p>
-            </div>
+    <div class="row">        
+           
+     <blockquote class="blockquote">
+        <p class="mb-0">"196 Reports of fake requests to fundraise for victims of the Ukraine crisis were received by the U.K.’s national fraud reporting centre up to March 2022".</p>
+         <footer class="blockquote-footer"> <cite title="Source Title">Lexis Nexis Risk Solutions. "The United Kingdom (U.K.) National Fraud received 196 reports about fake fundraising for Ukraine crisis victims." Retrieved from https://dataprot.net/statistics/charity-scam-statistics/</cite></footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                 <p class="mb-0">"In 2020, 200,000 new websites were registered for fake COVID-19 crisis fundraising...From February to March 2020, there was an increase of 569% in cybercriminals using domains like “coronavirus” or “covid.”</p>
+                    <footer class="blockquote-footer"> <cite title="Source Title">Lexis Nexis Risk Solutions. "The United Kingdom (U.K.) National Fraud received 196 reports about fake fundraising for Ukraine crisis victims." Retrieved from https://dataprot.net/statistics/charity-scam-statistics/</cite></footer>
+            </blockquote>
+    </div>
+    <div class="row" style="background-color: white; color: black;">
+        <div class="col-md-6">              
+            <p style="color: black;">The motive behind charitable giving is noble, yet certain individuals exploit the kindness of others. As a donor, it is important to know for certain the legitimacy of the organizations that you choose to support.</p> <p>Enter our web-browser extension concept, Give Guardian, designed to easily verify Not-for-profit organizations</p>
+           
+        </div>
+        <div class="col-md-6">
+            <img src="./Image/demoHomepage.png">
+        </div>          
+    </div>
+    <div class="row">  
+        <div class="col-md-6">         
+            <h1>Empathy</h1>  
             
-            <div class="col-md-6">
-                <div class="col-md-6-header">The solution: </div>
-                <p> With Give Guardian, our vision is to establish a user-centric, transparent, and intuitive charity donation verification application tailored to individual donors. Through this approach, we aim to instill a heightened sense of security, trust, and engagement in philanthropic endeavors. Our goal is to ensure that every act of giving truly fulfills its intended purpose and creates a meaningful impact and minimize the time spent on task.</p>
-            </div>
-        </div>
-        <div class="row">           
-            <div class="row-header"> The Design stages & Research Methods Used </div>                            
-        </div>
-                   
-                <h5> User Research- Stage One</h5>
-             <p class="row-text">User Interviews</p> Five remote interviews were conducted. 
-                <p class="row-text">Proto-Persona</p>
-                <p class="row-text">Research Plan</p>
-                <p class="row-text">Online Survey</p>  
+        </div> 
+        <div class="col-md-6">
+            <h2>One of the techniques we deployed to better understand the users was the creation of our user persona</h2>
+            <p>Our second-hand research shows that it is typically the age range of 61-71 years that donate the most often.</p>                
+            
+        </div>     
                              
-        
+    </div>    
            
             <h5>Define- Stage two</h5>
             <p class="row-text">Affinity Mapping</p>
@@ -137,7 +153,7 @@
             <p class="row-text">UI style guide</p>
             
      
-   <h5>Prototype</h5>
+            <h5>Prototype</h5>
             <p class="col-md-4-text">User Flow</p>
              <p class="col-md-4-text">Wireframes</p>
             <p class="col-md-4-text">Low, mid and high-fidelity prototypes</p>                 
@@ -147,76 +163,70 @@
             <h5>Test</h5>
           <p class="col-md-4-text">Usability Testing</p>
           <p class="col-md-4-text">Capturing user feedback</p>
-        
-    
+        </div>
+    </div>
 
     <div class="row">
-            <div class="col-md-6">
-                <div style="width:100%;height:0;padding-bottom:196%;position:relative;">
+        <div class="col-md-6">
+            <div style="width:100%;height:0;padding-bottom:196%;position:relative;">
                     <iframe src="./Image/Mainpage.mp4" width="100%" height="100%" style="position:absolute" frameborder="0" autoplay loop controls="false"></iframe>
-                </div>
             </div>
-            <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
                 <div class="col-md-6-header" style="color: #00BFF0;"> Design Decisions</div>
                 <p> Our goal is to simplify the process of contributing to unfamiliar causes. To achieve this, we added a 'compare feature' in our product. This feature will provide users with recommendations for similar nonprofit organizations (NPOs) to the one they are considering supporting. By offering these recommendations, we aim to eliminate the need for users to go through multiple steps to find a cause to contribute to."</p>
                 <p> We've strategically emphasized the 'compare' and 'search' features by incorporating two prominent call-to-action buttons on the vertical side of the application. To enhance visibility, we've introduced a contrasting pop of color, ensuring that these key actions stand out for users.  </p>
-            <img src="./Image/img1.png" style="width: 100%;">                  
-    </div>             
-          
-   
-</div>
-
-
-
-
-
-     
-
-</div>
-</body>   
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <ul class="footer-links">
-                    <li><a href="https://rogueanuku.github.io/Homework-20-new/" target="_blank">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="col-md-6 text-right"> <!-- This column will align its content to the right -->
-                <div class="footer-content">
-                    <img id="footer-image" src="./Image/IconOnly_Transparent.png">
-                    <p class="footer-text">© Proudly created by Anika McPhee 2023.</p>
-                </div>
-            </div>
+            <img src="./Image/img1.png" style="width: 100%;">
+        </div>                  
+    </div>           
+            
+ 
+    <div class="footer">
+        <div class="footer-links">
+         <ul class="footer-links">
+            <li><a href="" target="_blank">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
         </div>
-    </div>
-</footer>
+        <div class="footer-image">
+             <img src="./Image/IconOnly_Transparent.png" alt="Footer Image" class="footer-image">
+        <p> © Proudly created by Anika McPhee 2023.</p>
+        </div>
+
+    </footer>
+    
+        <script>
+         $(document).ready(function() {
+            console.log('jQuery version:', $.fn.jquery);
+            console.log('Bootstrap version:', $.fn.tooltip.Constructor.VERSION);
+         });
+        </script>
+    </body>
+    
+      
+    <script>
+        function downloadPDFImage() {
+            // Replace "path/to/page1.jpg" with the actual path to your PDF page
+            var pdfImagePath = "path/to/page1.jpg";
+            
+            // Create a temporary anchor element
+            var downloadLink = document.createElement("a");
+            downloadLink.href = pdfImagePath;
+            downloadLink.download = "pdf_image.jpg"; // Set the desired file name
+    
+            // Trigger a click on the anchor element to start the download
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+        }
+    </script>
+            
+       
+    </html>
     
 
 
 
-
-
-
-    <!-- Include Bootstrap JavaScript and Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-</body>
-<script src="script.js">
-    $(document).ready(function() {
-    // Add hover effect to list items
-    $('#footer-nav ul li').hover(
-        function() {
-            $(this).css('background-color', '#f0f0f0'); // Change background color on hover
-        },
-        function() {
-            $(this).css('background-color', ''); // Reset background color on mouseout
-        }
-    );
-});
-</script>
-</html>

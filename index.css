@@ -1,388 +1,148 @@
-.menu-icon-img img {
-    width: 46px;
-}
-.bg-dark {
+@media  (min-width: 320px)  {
+    body {
+        padding: 0;
+        background-color: black;
+        margin: 0;
+        /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: left;
+        position: relative;
+        
+    }
+    html, body {
+        height: 100%;
+    }
+    .container {
+        min-height: 100%;
+        position: relative;
+    }
+    body, h1, h2, h3, p, div {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .menu-icon-img img {
+        width: 46px;
+    }
+   
+     .menu-icon-img {   width: 38px}
+    
+    
+     .navbar {
+    box-shadow: -1px 1px 14px 0px #00bFF0;
     background-color: #000 !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1030;
+     }
+     .navbar-name {
+        /* font-family: cinzel; */
+        font-size: 1rem;
+        color: #F23580;
+    }
+     .navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: #000;/* border-color: rgba(255,255,255,.1); */
+     }
+     .navbar-nav .nav-item .nav-link {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color:#6e7175; /* Default link color */
+    transition: color 0.3s; /* Add a smooth transition for color change */
+     }
+     .navbar-nav .nav-item .nav-link:hover {
+    color: #00BFF0; /* Change the color to your desired hover color */
+     }
+     .navbar-dark .navbar-nav .nav-item.active .nav-link {
+        color: #F23580; /* Change this to the desired color */
+    }
+    .collapse.navbar-collapse.ml-auto {
+        justify-content: right;
+    }
+    
+
+     .row {
+        margin-right: 0px;
+        margin-left: 0px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+#back-arrow {
+   
+        padding-bottom: 16%;
+    
 }
-.menu-icon-img {   width: 38px}
-body {
-background-color: black;
+.jumbotron-content {
+   padding: 4%;
+    position: relative;
+    z-index: 1;
+}
+.blockquote {
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    padding: 4%;
 }
 
-.navbar {
-box-shadow: -1px 1px 14px 0px #00bFF0;
-position: fixed;
-width: 100%;
-top: 0;
-left: 0;
-z-index: 1030;
+.blockquote-footer {
+    display: block;
+    font-size: .70em;
+    color: #6c757d;
 }
-.navbar-name {
-
-color: #F23580;
-}
-.navbar-dark .navbar-toggler {
-color: rgba(255,255,255,.5);
-border-color: #000;/* border-color: rgba(255,255,255,.1); */
-}
-.navbar-nav .nav-item .nav-link {
-font-weight: 500;
-font-size: 1.1rem;
-color:#6e7175; /* Default link color */
-transition: color 0.3s; /* Add a smooth transition for color change */
-}
-.navbar-nav .nav-item .nav-link:hover {
-color: #00BFF0; /* Change the color to your desired hover color */
-}
-
-.navbar-expand-lg .navbar-collapse {
-    padding-right: 30px;
-    display: -ms-flexbox!important;
-    display: flex!important;
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-    padding: 5;
-    justify-content: flex-end;
-    flex-direction: row;
-    align-content: space-around;
-}
-.bg-dark {
-background-color: #000!important;
-}
-.menu-icon-img img {
-width: 50px;
-}
-.menu-icon-img img {
-transition: transform 0.3s; /* Add a smooth transition effect */
-}
-
-.menu-icon-img:hover img {
-transform: scale(1.1); /* Increase the size on hover */
-}
-
-a {
-    color: #117a8b;
-    text-decoration: none;
-    background-color: transparent;
-}
-.jumbotron {
+.col-md-10 {
+    padding: 4%;
     margin-left: auto;
     margin-right: auto;
-    justify-content: center;
-    width: 90%;
-    background-color: #000;
-    padding: 0rem 0rem;
 }
-
-.h3, h3 {
-    color: #00BFF0;
-    margin-left: 4%;
+.col-md-6 {
+    padding: 4%;
+}
+.col-md-6 img{
+    width: 100%;
+}
+.footer {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    color: #F23580;
     padding: 2%;
-    margin-top: -60%;
-    font-size: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    box-shadow: 0px 7px 58px 20px #00bff0ad;
 }
-.jumbotron p {
-    font-weight: 300;
-    font-size: 1.4rem;
-    padding: 1rem;
-    margin-top: 18%;
-    margin-left: 46%;
-    color: #fff;
-    /* font-size: 16px; */
+
+
+/* Style for the left-side links */
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-#back-arrow {
-    font-size: 1.4rem;
-    margin-left: 20px;
-    margin-top: 15%;
-    margin-bottom: 0%;
-    /* padding-bottom: 3%; */
-    /* padding: 6rem; */
+/* Style for individual links */
+.footer-links a {
     color: #F23580;
-}
-a {
-    color: #f23580;
     text-decoration: none;
-    background-color: transparent;
+    margin-right: 20px;
+    transition: text-decoration 0.3s; /* Add a smooth transition effect */
 }
-
-   
-   .container-fluid img {
-           
-            width: 100%;
-            border-radius: 25px;
-        }
-     
-   
-        .footer {
-           
-            padding: 1rem;
-            box-shadow: -1px 1px 14px 0px #00BFF0;
-            width: 100%;
-            background-color: #000;
-        }
-        
-        /* Add this CSS to your existing stylesheet */
-       
-        #footer-image {
-            width: 170px;
-           
-        }
-        
-        .footer-text {
-            font-size: 12px;
-            color: #495057;
-        }
-        /* Style for the footer links */
-        .footer-links {
-            list-style-type: none;
-            padding: 0;
-        }
-        dl, ol, ul {
-            /* margin-top: 0; */
-            /* margin-bottom: 21rem; */
-        }
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-links a {
-            text-decoration: none;
-            color: #f23580;
-            transition: text-decoration 0.3s; /* Add a smooth transition effect */
-        }
-        
-        .footer-links a:hover {
-            text-decoration: underline; /* Underline the link on hover */
-            color: #00BFF0; /* Change the link color on hover */
-        }
-        .container-fluid footer img {
-            margin-left: 37%;
-            justify-content: center;
-            width: 25%;
-            margin-top: -63px;
-        }
-        .carousel-item {
-            position: relative;
-            display: none;
-            float: left;
-            width: 100%;
-            margin-right: -100%;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-            transition: -webkit-transform .6s ease-in-out;
-            transition: transform .6s ease-in-out;
-            transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out;
-        }
-        .carousel-inner {
-            padding-top: 2%;
-            /* margin-top: -2%; */
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-        }
-        .carousel-inner img{
-          
-                width: 50%;
-            
-        }
-        #carouselExampleCaptions {
-            background-color: white; /* Replace with your desired background color */
-          }
-          .h5, h5 {
-            font-weight: 300;
-            color: #00bff0;
-            text-align: left;
-            font-size: 1.5rem;
-        }
-        .row {
-            justify-content: center;
-            color: #fff;
-            padding: 4%;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-            margin-right: -15px;
-            margin-left: -15px;
-        }
-        .row-3 {
-            margin-top: -4%;
-            color: #fff;
-            padding: 3%;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-            margin-right: -15px;
-            margin-left: -15px;
-        }
-        .col-md-6-header {
-            font-size: 1.6rem;
-            color: #F23580;
-        }
-     .card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  border: 1px solid black;
-  border-radius: .25rem;
-  background-color: #000;
-  box-shadow: -1px 1px 14px 0px #00bff054;
+.footer-links a:hover {
+    text-decoration: underline; /* Underline the link on hover */
+    color: #00BFF0; /* Change the link color on hover */
 }
-
-.card-img-container {
-  position: relative;
-  overflow: hidden;
-  border-top-left-radius: .25rem;
-  border-top-right-radius: .25rem;
+/* Style for the image on the right side */
+.footer-image {
+    max-width: 180px;
 }
-
-.card-img-top {
-  width: 100%;
-  height: auto;
-  display: block;
+.footer-image p {
+    color: grey;
+    font-size: 12px;}
 }
-
-.card-body {
-  background-color: black;
-  flex: 1 1 auto;
-  min-height: 2px;
-  padding: 1.25rem;
-  border-bottom-left-radius: .25rem;
-  border-bottom-right-radius: .25rem;
-}
-.card-body-2 {
-    background-color: #fff;
-}
-.col-md-6-header-1{
-    margin-top: -110px;
-    font-size: 1.6rem;
-    color: #F23580;
-}
-.row-header{
-    
-        margin-top: 3%;
-        font-size: 1.6rem;
-        color: #F23580;
-    
-}
-      @media (min-width:768px) { 
-
-      
-        .footer {
-            margin-top: 7%;
-            padding: 1rem;
-            box-shadow: -1px 1px 14px 0px #00BFF0;
-            width: 100%;
-            background-color: #000;
-        }
-        
-      }
-   
-          
-@media (min-width:1024px){
-        #back-arrow {
-    font-size: 1.4rem;
-    margin-left: 10%;
-    margin-top: 10%;
-    margin-bottom: 0%;
-    /* padding-bottom: 3%; */
-    /* padding: 6rem; */
-    color: #F23580;} 
-    .jumbotron {
-        margin-top: -2%;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-        width: 72%;
-        background-color: #000;
-        padding: 0rem 0rem;
-    }
-
-        
-      }
-     
-        @media (min-width: 1920px) {
-            .navbar-nav {
-                font-size: 1.4rem;
-            }
-            
-            .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-                width: 86%;
-                padding-right: 15px;
-                padding-left: 15px;
-                margin-right: auto;
-                margin-left: auto;
-            }
-            .jumbotron-content {
-                text-align: center; /* Center the text and image horizontally */
-            }
-            .jumbotron-content {
-                text-align: center;
-                border-radius: 25px;
-                overflow: hidden;
-            }
-            .jumbotron p {
-                padding-right: 3%;
-                padding-left: 2%;
-                font-weight: 400;
-                font-size: 2rem;
-                /* padding: 1rem; */
-                margin-top: 23%;
-                margin-left: 43%;
-                color: #fff;
-                /* font-size: 16px; */
-                padding-left: 2%;
-            }
-            .container-fluid img {
-                display: block;
-                margin: 0 auto;
-                width: 100%;
-                border-radius: 25px;
-            }
-            .h3, h3 {
-                text-align: left;
-                color: #00BFF0;
-                margin-left: 8%;
-                padding: 2%;
-                /* margin-top: -60%; */
-                font-size: 4rem;
-            }
-            #back-arrow {
-                font-size: 2.2rem;
-                margin-left: 7%;
-                margin-top: 6%;
-                margin-bottom: 0%;
-                color: #F23580;
-            }
-            .col-md-6 {
-                font-size: 1.3rem;
-                -ms-flex: 0 0 50%;
-                flex: 0 0 50%;
-                max-width: 50%;
-            }
-            .footer {
-                                padding: 1rem;
-                box-shadow: -1px 1px 14px 0px #00BFF0;
-                background-color: #000;
-                width: 100vw; /* Use viewport width to make it full width */
-                position: relative; /* Use relative positioning */
-            }
-        
-            .footer-content {
-                text-align: center; /* Center the content horizontally */
-                margin: 0 auto; /* Center the content vertically */
-                max-width: 100%; /* Ensure content doesn't overflow */
-            }
-        
-            #footer-image {
-                width: 100%; /* Adjust the width to fit within centered content */
-                max-width: 240px; /* Set a maximum width if necessary */
-            }
-        }
-        
-            
-    
-     
