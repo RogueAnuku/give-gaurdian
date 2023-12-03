@@ -73,15 +73,15 @@
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
-#back-arrow {
-   
-        padding-bottom: 16%;
-    
-}
-.jumbotron-content {
+    #back-arrow {
+        padding-bottom: 2%;
+    }umbotron-content {
    padding: 4%;
     position: relative;
     z-index: 1;
+}
+.jumbotron-content {
+    padding: 4%;
 }
 .blockquote {
     color: white;
@@ -96,8 +96,9 @@
     font-size: .70em;
     color: #6c757d;
 }
-h2 {
+h2 {color: #00BFF0;
     font-size: 1.2rem;
+    padding: 4%;
 }
 
 .col-md-10 {
