@@ -83,6 +83,7 @@
 .jumbotron-content {
     padding: 4%;
 }
+.box-scroll{ white-space: nowrap;}
 .blockquote {
     color: white;
     margin-right: auto;
@@ -98,6 +99,9 @@
 }
 h2 {color: #00BFF0;
     font-size: 1.2rem;
+    padding: 4%;
+}
+.col-md-4 {
     padding: 4%;
 }
 
