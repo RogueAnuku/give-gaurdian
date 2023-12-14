@@ -2,46 +2,46 @@
 <html>
 
 <head>
-<!-- Include CSS and JavaScript libraries -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="./index.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Include CSS and JavaScript libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
 
-<script src="./script.js"></script>
-<!-- Include your JavaScript file here -->
+    <script src="./script.js"></script>
+    <!-- Include your JavaScript file here -->
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-<script>
-    // Your smooth scroll script
-    $(document).ready(function () {
-        // Smooth scroll when clicking on the navigation links
-        $('a.nav-link[href*="#"]').not('[href="#"]').click(function (event) {
-            if (
-                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-                location.hostname == this.hostname
-            ) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    event.preventDefault();
-                    $('html, body').animate(
-                        {
-                            scrollTop: target.offset().top
-                        },
-                        1000 // You can adjust the animation speed here (in milliseconds)
-                    );
+    <script>
+        // Your smooth scroll script
+        $(document).ready(function () {
+            // Smooth scroll when clicking on the navigation links
+            $('a.nav-link[href*="#"]').not('[href="#"]').click(function (event) {
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname
+                ) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').animate(
+                            {
+                                scrollTop: target.offset().top
+                            },
+                            1000 // You can adjust the animation speed here (in milliseconds)
+                        );
+                    }
                 }
-            }
+            });
         });
-    });
-</script>
+    </script>
+</head>
 
 
 
@@ -79,7 +79,11 @@
         </div>
     </nav>
       
-    <div class="jumbotron jumbotron-fluid">
+    
+        
+          
+    <div class="row"> 
+        <div class="jumbotron jumbotron-fluid">
             <div class="container-fluid">
                 <div class="jumbotron-content">
                     <div id="back-arrow">
@@ -97,15 +101,12 @@
                             Desiree Henry (User Interface)</p>
                 </div>
             </div>
-    </div>
-        
-          
-    <div class="row">        
+    </div>       
            
      <blockquote class="blockquote">
         <p class="mb-0">"196 Reports of fake requests to fundraise for victims of the Ukraine crisis were received by the U.K.’s national fraud reporting centre up to March 2022".</p>
          <footer class="blockquote-footer"> <cite title="Source Title">Lexis Nexis Risk Solutions. "The United Kingdom (U.K.) National Fraud received 196 reports about fake fundraising for Ukraine crisis victims." Retrieved from https://dataprot.net/statistics/charity-scam-statistics/</cite></footer>
-            </blockquote>
+    </blockquote>
             <blockquote class="blockquote">
                  <p class="mb-0">"In 2020, 200,000 new websites were registered for fake COVID-19 crisis fundraising...From February to March 2020, there was an increase of 569% in cybercriminals using domains like “coronavirus” or “covid.”</p>
                     <footer class="blockquote-footer"> <cite title="Source Title">Lexis Nexis Risk Solutions. "The United Kingdom (U.K.) National Fraud received 196 reports about fake fundraising for Ukraine crisis victims." Retrieved from https://dataprot.net/statistics/charity-scam-statistics/</cite></footer>
@@ -144,11 +145,11 @@
                      
             <p> Our target demographic focuses on adults aged 61-71, as secondary research indicates that this age group is the most inclined to contribute. </p>            
        
-        </div>      
+        </div>    
                           
     </div> 
     <h2>What people had to say about assessing the legitimacy of a not-for-profit:</h2>
-    <div class="row row-cols-1 row-cols-md-2 overflow-auto flex-nowrap">      
+    <div class="row row-cols-1 row-cols-md-2  flex-nowrap">      
         <div class="col mb-4">
           <div class="card">
             <img src="./Image/christian-buehner-DItYlc26zVI-unsplash 1.png" class="card-img-top" alt="...">
@@ -158,7 +159,7 @@
               <div class="card-img-top">
 
               </div>
-              <p class="card-text">"100% trust is so important.  Anything money-related matters. Anytime I see that there's an *, I pay attention. For me, a positive experience is how you can make me feel and then guide me through the process easily. Don't rush me through."
+              <p class="card-text">"100% trust is so important. Anything money-related matters. Anytime I see that there's an *, I pay attention. For me, a positive experience is how you can make me feel and then guide me through the process easily. Don't rush me through."
                 </p>
             </div>
           </div>
@@ -182,7 +183,7 @@
             </div>
           </div>
         </div>
-        <div class="col mb-4">
+        <div class="col mb-4" style="padding: 4%;">
           <div class="card">
             <img src="./Image/participant4.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -194,8 +195,8 @@
           </div>
         </div>
     </div> 
-    <div class="row">
-        <div class="col-md-8">           
+    <div class="row" >
+        <div class="col-md-8" style="padding: 4%;">                   
         </div>
         <div class="col-md-4">
             <h1>Define</h1>
@@ -216,12 +217,10 @@
                 <li class="list-group-item">I like, I wish, What if ? </li>
                 <li class="list-group-item">UI style guide</li>
             </ul>          
-        </div>
-        
-        <div class="col-md-8" style="font-weight: 300;">
-       
-        <p style="padding-top: 16%;">How can we enhance donation platforms to instill a greater sense of trust among users, strengthen their connection to the causes they support, and ultimately inspire them to actively contribute to positive change without the fear of being scammed?</p>
-         <P style="padding-top: 10%; font-weight: 500;">Success will be measured by increased donations and user satisfaction.</P>
+        </div>        
+        <div class="col-md-8" style="font-weight: 300;">       
+            <p style="padding-top: 16%;">How can we enhance donation platforms to instill a greater sense of trust among users, strengthen their connection to the causes they support, and ultimately inspire them to actively contribute to positive change without the fear of being scammed?</p>
+            <P style="padding-top: 10%; font-weight: 500;">Success will be measured by increased donations and user satisfaction.</P>
                                
         </div>                  
     </div>  
@@ -237,64 +236,35 @@
                 <li class="list-group-item" style="background-color: black; color: white;">UI style guide</li>
               </ul>
 
-        </div>
-        
-        <div class="row row-cols-1 row-cols-md-8 overflow-auto flex-nowrap">       
-           
-            <div class="col-md-6" style="max-width: 30%; padding: 0%;">
-               <img src="./Image/lofi1.png" class="card-img-top" alt="...">                             
-               
-    
-            </div>        
-                               
-            <div class="col-md-6" style="max-width: 30%; padding: 0%">
-                <img src="./Image/lofi2.png" class="card-img-top" alt="...">
-               
-            </div>
-              
-            
-            <div class="col-md-6" style="max-width: 30%; padding: 0%">
-                <img src="./Image/lofi3.png" class="card-img-top" alt="...">
-                
-            </div>
-              
-           
-           
-            <div class="col-md-6" style="max-width: 30%;padding: 0%">
-                <img src="./Image/lofi4.png" class="card-img-top" alt="...">
-               
-            </div>
-              
-           
-        </div>              
-       
-    </div>       
+        </div> 
+        <div class="col-md-8">
+
+        </div>  
+    </div>      
+   
     <div class="row" style="background-color: white; padding: 4%;">
-        <div class="col-md 6">
+        <div class="col-md-6">
             <h1>Test</h1>
-        <p style="padding: 4%;">We had five participants partake in a moderated usability test. The testing was conducted in August 2023. </p>     
+            <p style="padding: 4%;">We had five participants partake in a moderated usability test. The testing was conducted in August 2023. </p>     
         </div>
         <div class="col-md-5">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">#1 Have the user open the Give Guardian extension to check for authenticity  </li>
                 <li class="list-group-item">#2 Have the participant use filter functions. </li>
                 <li class="list-group-item">#3 Have the user navigate and provide feedback on the Learn More feature.</li>
-                <li class="list-group-item">#4 Request for the user to find and utilize the 'compare' feature </li>
-            
+                <li class="list-group-item">#4 Request for the user to find and utilize the 'compare' feature </li>            
             </ul>
-
         </div>
-
     </div>
 
-    <div class="row">
+    <div class="row" style="padding: 4%;">
         <div class="col-md-12">
             <h1>Conflicts</h1>
-            <p style="color: white;"> Out of the four tasks and five users only one particpant struggled. 4/5 Participants found the designs intuitive and easy to completed the task without hesitation. One person struggled to understand the page that provides a break down in the charity . </p>
-        <p style="color: white;"> Our users were confused by inconsistent iconography. We had a heart icon and a save icon. </p>
-        <p style="color: white;">“I enjoy the compare feature. I would,
-            however, want to see the content
-            spread out, it seems a bit busy."-Participant</p>
+                 <p style="color: white;"> Out of the four tasks and five users only one particpant struggled. 4/5 Participants found the designs intuitive and easy to completed the task without hesitation. One person struggled to understand the page that provides a break down in the charity . </p>
+                    <p style="color: white;"> Our users were confused by inconsistent iconography. We had a heart icon and a save icon. </p>
+                    <p style="color: white;">“I enjoy the compare feature. I would,
+                    however, want to see the content
+                        spread out, it seems a bit busy."-Participant</p>
         </div>
     </div>
     <div class="row">
@@ -324,20 +294,19 @@
         <div class="col-md-12">
             <p style="color: white;">This clip shows the verification process for Friends of The Earth using Give Guardian. To note, we have placed their mission statement in the center (because believe it or not, sometimes mission statements are not obvious or placed on the landing page at all...)  and we have listed similar charities  on the lower portion.</p>
         </div>
-    </div>
-    <div class="row">
+   
+    
+    
         <div class="col-md-6">
             <h2>The "crowded" Compare Feature:</h2>
             <img src="./Image/comparelowfi.png">
         </div>
       
-            <div class="col-md-6">
-                <h2>The iteration:</h2>
+        <div class="col-md-6">
+            <h2>The iteration:</h2>
                 <iframe src="https://giphy.com/embed/W8JG2tJ8VL247QmDjN" width="600px" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/W8JG2tJ8VL247QmDjN"></a></p>
                 <p style="color: white;">The content has now been made scrollable to best fit the conent and make it feel less condence while still providing sufficitent information.</p>
-
-            </div>
-      
+        </div>
     </div>
     <div class="row" style="background-color: white;">
         <div class="col-md-12">
@@ -390,7 +359,7 @@
     </script>
             
        
-    </html>
+</html>
     
 
 
