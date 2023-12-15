@@ -15,10 +15,7 @@
     html, body {
         height: 100%;
     }
-    .container {
-        min-height: 100%;
-        position: relative;
-    }
+    
     body, h1, h2, h3, p, div {
         margin: 0;
         padding: 0;
@@ -75,33 +72,18 @@
         flex-wrap: wrap;
     }
     #back-arrow {
-        padding-bottom: 2%;
+        padding-left: 4%;
+        margin-top: 40px;
+        /* padding-bottom: 2%; */
     }
-    .jumbotron-content {
-   padding: 4%;
-    position: relative;
-    z-index: 1;
-}
-.jumbotron-content {
-    padding: 4%;
-}
-#container {
-    width: 60%;
-    aspect-ratio: 2/1;
-    margin: auto;
-    border: solid black 2px;
-    overflow-x: none;
-    overflow-y: scroll;
-    white-space: nowrap;
-    scroll-snap-type: x mandatory;
-  }
+ 
         
  
 .blockquote {
     color: white;
     margin-right: auto;
     margin-left: auto;
-    width: 80%;
+   
     padding: 4%;
 }
 
@@ -110,7 +92,9 @@
     font-size: .70em;
     color: #6c757d;
 }
-
+.giphy-embed {
+    width: 100%;
+}
 
 .h1, h1 {
    
@@ -129,7 +113,9 @@ h2 {color: #00BFF0;
 .col-md-4 {
     padding: 4%;
 }
-
+.col-md-5 {
+    padding: 4%;
+}
 .col-md-10 {
     padding: 4%;
     margin-left: auto;
@@ -140,6 +126,9 @@ h2 {color: #00BFF0;
 }
 .col-md-6 img{
     width: 100%;
+}
+.col-md-8 {
+    padding: 4%;
 }
 .col-md-12 {
     padding: 4%;
@@ -152,17 +141,24 @@ h2 {color: #00BFF0;
     border: 1px solid #00bff0;
 }
 .card {
+    padding: 1%;
     position: relative;
     display: -ms-flexbox;
     display: flex;
-    padding: 2%;
-    width: 100%;
     word-wrap: break-word;
     background-color: #ffffff38;
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: 1.25rem;
+    min-width: 46%;
+        transition: transform 0.3s ease;
+      
 }
+.card:hover {
+    transform: scale(1.1); /* Adjust the scaling factor as needed */
+    transition: transform 0.3s ease; /* Adjust the transition duration as needed */
+  }
+  
 .card-body {
     color: white;
     -ms-flex: 1 1 auto;
@@ -214,7 +210,4 @@ h2 {color: #00BFF0;
     color: grey;
     font-size: 12px;}
 }
-@media screen and (min-width: 768px) {
-   
 
-}
