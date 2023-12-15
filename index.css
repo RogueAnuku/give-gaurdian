@@ -76,7 +76,8 @@
     }
     #back-arrow {
         padding-bottom: 2%;
-    }umbotron-content {
+    }
+    .jumbotron-content {
    padding: 4%;
     position: relative;
     z-index: 1;
@@ -84,7 +85,18 @@
 .jumbotron-content {
     padding: 4%;
 }
-.box-scroll{ white-space: nowrap;}
+#container {
+    width: 60%;
+    aspect-ratio: 2/1;
+    margin: auto;
+    border: solid black 2px;
+    overflow-x: none;
+    overflow-y: scroll;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+  }
+        
+ 
 .blockquote {
     color: white;
     margin-right: auto;
@@ -143,9 +155,8 @@ h2 {color: #00BFF0;
     position: relative;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
+    padding: 2%;
+    width: 100%;
     word-wrap: break-word;
     background-color: #ffffff38;
     background-clip: border-box;
